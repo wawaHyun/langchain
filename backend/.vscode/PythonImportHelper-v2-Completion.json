@@ -1,0 +1,128 @@
+[
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain.chat_models.openai",
+        "description": "langchain.chat_models.openai",
+        "isExtraImport": true,
+        "detail": "langchain.chat_models.openai",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "HumanMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "AIMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Item(BaseModel):\n    question :str\n@app.post(\"/chat/\")\ndef chatting(question: str):\n    print(\"question \",question)\n    return question",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "chatting",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def chatting(question: str):\n    print(\"question \",question)\n    return question",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\n@app.get(\"/\")\nasync def read_root():\n    chat = ChatOpenAI(\n        openai_api_key=os.environ[\"API_KEY\"],\n        temperature=0.1,\n        max_tokens=2048,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\n@app.get(\"/\")\nasync def read_root():\n    chat = ChatOpenAI(\n        openai_api_key=os.environ[\"API_KEY\"],\n        temperature=0.1,\n        max_tokens=2048,\n        model_name=\"gpt-3.5-turbo-0613\",\n    )",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def read_root():\n    chat = ChatOpenAI(\n        openai_api_key=os.environ[\"API_KEY\"],\n        temperature=0.1,\n        max_tokens=2048,\n        model_name=\"gpt-3.5-turbo-0613\",\n    )\n    # question = 'korea?'",
+        "detail": "main",
+        "documentation": {}
+    }
+]
