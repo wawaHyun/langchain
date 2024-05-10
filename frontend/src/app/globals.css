@@ -16,18 +16,17 @@
   }
 }
 
-
 html {
   height: 100%;
 }
 
-header{
+header {
   height: 20;
 }
 body {
-  height: 80%;
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient(
+  /* height: 80%;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))

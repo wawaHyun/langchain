@@ -1,65 +1,78 @@
 from typing import Union
 from fastapi import FastAPI
 from langchain.chat_models.openai import ChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage, AIMessage
+from langchain.schema import HumanMessage, AIMessage, SystemMessage
 import os
 from dotenv import load_dotenv
-from typing import Optional
+import uvicorn
+from app.api.titanic.model.titanic_model import TitanicModel
+from app.main_router import router
 from pydantic import BaseModel
+from starlette.middleware.cors import CORSMiddleware
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
+class Request(BaseModel):
+    question: str
+
+class Response(BaseModel):
+    answer: str
+
 llm = ChatOpenAI(openai_api_key="...")
 app = FastAPI()
 
+app.include_router(router)
+
+origins = [
+    "*"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
 async def read_root():
-
-    chat = ChatOpenAI(
-        openai_api_key=os.environ["API_KEY"],
-        temperature=0.1,
-        max_tokens=2048,
-        model_name="gpt-3.5-turbo-0613",
-    )
-
-    # question = 'korea?'
-    # print(f'answer {chat.predict(question)}')
-    
-    # message = [
-    #     SystemMessage(content="""
-    #                   You are SQL Developer. My database is innodb mysql.
-    #                   The database has a table named 'players' with the following columns: id, name, age.
-    #                   The database has another table named 'teams' with the following columns: id, name, player_id.
-    #                   """, type="system"),
-    #     HumanMessage(content="What is the SQL query to get the names of all players?", type="human"),
-    #     AIMessage(content="SELECT name FROM players", type="ai"),
-    # ]
-
-    message = [
-        SystemMessage(content="""
-                      You are a traveler.
-                      I know the capitals of every country in the world.
-                      """, type="system"),
-        HumanMessage(content="where is korea capitals?", type="human"),
-        AIMessage(content="seoul", type="ai"),
-    ]
-    
-    print('answer2 : ',chat.predict_messages(message))
-    return {"Hello": message}
+    return {"Hello": "message"}
 
 
 @app.get("/items/{item_id}")
 async def read_item(item_id: int, q: Union[str,  None] = None):
     return {"item_id": item_id, "q": q}
 
-class Item(BaseModel):
-    question :str
 
-@app.post("/chat/")
-def chatting(question: str):
-    print("question ",question)
-    return question
+@app.post("/chat")
+def chatting(req:Request):
+    print(req)
+
+    chat= ChatOpenAI(
+        openai_api_key=os.environ["api_key"],
+        temperature=0.1,
+        max_tokens=2048,
+        model_name = 'gpt-3.5-turbo-0613'
+    )
+    # question = '대한민국의 수도는 뭐야?'질문Unexpected indentation
+
+    # result = chat.predict(question)
+
+    # print(f'[답변] : {result}')
+
+    message= [
+        SystemMessage(content="You are a traveler. I know the capitals of every country in the world",type="system"),
+        HumanMessage(content="한국의 수도는 어디야 ?",type="human"),
+        AIMessage(content="서울 입니다.", type="ai")
+    ]
+
+    print(f'[답변] : {chat.predict_messages(message)}')
+
+    return  Response(answer=chat.predict(req.question))
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="localhost", port=8000)

@@ -1,18 +1,59 @@
 [
     {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -24,19 +65,43 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.titanic.web.titanic_router",
+        "description": "app.api.titanic.web.titanic_router",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "ChatOpenAI",
         "importPath": "langchain.chat_models.openai",
         "description": "langchain.chat_models.openai",
         "isExtraImport": true,
         "detail": "langchain.chat_models.openai",
-        "documentation": {}
-    },
-    {
-        "label": "SystemMessage",
-        "importPath": "langchain.schema",
-        "description": "langchain.schema",
-        "isExtraImport": true,
-        "detail": "langchain.schema",
         "documentation": {}
     },
     {
@@ -49,6 +114,14 @@
     },
     {
         "label": "AIMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
         "importPath": "langchain.schema",
         "description": "langchain.schema",
         "isExtraImport": true,
@@ -73,19 +146,207 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "uvicorn",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "pydantic",
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
         "documentation": {}
     },
     {
-        "label": "Item",
+        "label": "router",
+        "importPath": "app.main_router",
+        "description": "app.main_router",
+        "isExtraImport": true,
+        "detail": "app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "starlette.middleware.cors",
+        "description": "starlette.middleware.cors",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "kind": 6,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "class TitanicModel:\n    context : str\n    fname : str\n    train : object\n    test : object\n    id : str\n    label : str\n@property\ndef context(self) -> str: return self.context\n@context.setter",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def context(self) -> str: return self.context\n@context.setter\ndef context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "fname",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "fname",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "id",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "id",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "label",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "label",
+        "kind": 2,
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "peekOfCode": "def label(self, label: str): self.label = label",
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicService",
+        "kind": 6,
+        "importPath": "app.api.titanic.service.titanic_service",
+        "description": "app.api.titanic.service.titanic_service",
+        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def new_model(self,payload) -> object:\n        this = self.model\n        this.context = '../data/'\n        this.fname = payload\n        return pd.read_csv(this.context + this.fname)",
+        "detail": "app.api.titanic.service.titanic_service",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "kind": 6,
+        "importPath": "app.api.titanic.web.titanic_router",
+        "description": "app.api.titanic.web.titanic_router",
+        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"titanic\": \"titanic\"}",
+        "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "kind": 6,
+        "importPath": "app.api.titanic.web.titanic_router",
+        "description": "app.api.titanic.web.titanic_router",
+        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"titanic\": \"titanic\"}",
+        "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.titanic.web.titanic_router",
+        "description": "app.api.titanic.web.titanic_router",
+        "peekOfCode": "router = APIRouter()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"titanic\": \"titanic\"}",
+        "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.main_router",
+        "description": "app.main_router",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(titanic_router)",
+        "detail": "app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class Item(BaseModel):\n    question :str\n@app.post(\"/chat/\")\ndef chatting(question: str):\n    print(\"question \",question)\n    return question",
+        "peekOfCode": "class Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,",
         "detail": "main",
         "documentation": {}
     },
@@ -94,7 +355,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def chatting(question: str):\n    print(\"question \",question)\n    return question",
+        "peekOfCode": "def chatting(req:Request):\n    print(req)\n    chat= ChatOpenAI(\n        openai_api_key=os.environ[\"api_key\"],\n        temperature=0.1,\n        max_tokens=2048,\n        model_name = 'gpt-3.5-turbo-0613'\n    )\n    # question = '대한민국의 수도는 뭐야?'질문Unexpected indentation\n    # result = chat.predict(question)",
         "detail": "main",
         "documentation": {}
     },
@@ -103,7 +364,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\n@app.get(\"/\")\nasync def read_root():\n    chat = ChatOpenAI(\n        openai_api_key=os.environ[\"API_KEY\"],\n        temperature=0.1,\n        max_tokens=2048,",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nclass Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [",
         "detail": "main",
         "documentation": {}
     },
@@ -112,7 +373,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\n@app.get(\"/\")\nasync def read_root():\n    chat = ChatOpenAI(\n        openai_api_key=os.environ[\"API_KEY\"],\n        temperature=0.1,\n        max_tokens=2048,\n        model_name=\"gpt-3.5-turbo-0613\",\n    )",
+        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
         "detail": "main",
         "documentation": {}
     },
@@ -121,7 +382,16 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def read_root():\n    chat = ChatOpenAI(\n        openai_api_key=os.environ[\"API_KEY\"],\n        temperature=0.1,\n        max_tokens=2048,\n        model_name=\"gpt-3.5-turbo-0613\",\n    )\n    # question = 'korea?'",
+        "peekOfCode": "app = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "origins",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "origins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)",
         "detail": "main",
         "documentation": {}
     }
