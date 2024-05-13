@@ -1,8 +1,13 @@
 
 from fastapi import APIRouter
 from pydantic import BaseModel
+from app.api.titanic.service.titanic_service import TitanicService
+import sys
+sys.setrecursionlimit(10000)
+
 
 router = APIRouter()
+service = TitanicService()
 
 class Request(BaseModel):
     question :str
@@ -12,13 +17,16 @@ class Response(BaseModel):
 
 @router.post("/titanic")
 async def titanic(req:Request):
-    print("titanic 진입완")
+    print("titanic 진입완1")
     
-    # hello = open('C:\\Users\\bitcamp\\TuringTeamPJT\\langchain\\backend\\app\\api\\titanic\\data\\hellow.txt')
-    # # f = open("D:/101. work/python/res/path_test/test.txt", "r", encoding="utf-8")
-    # data = hello.read()
-    # print(data)
-    # hello.close()
+    hello = 'C:\\Users\\bitcamp\\TuringTeamPJT\\langchain\\backend\\app\\api\\titanic\\data\\hellow.txt'
+
+    f = open(hello, "r", encoding="utf-8")
+    data = f.read()
+    print(data)
+    f.close()
+
+    result = service.process()
  
     print(req)
-    return {"answer": "titanic 생존자는 100명"}
+    return {"answer": result}

@@ -22,7 +22,7 @@ class Response(BaseModel):
 llm = ChatOpenAI(openai_api_key="...")
 app = FastAPI()
 
-
+app.include_router(router, prefix="/api")
 
 origins = [
     "*"
@@ -56,8 +56,6 @@ def chatting(req:Request):
         temperature=0.1,
         max_tokens=2048,
         model_name = 'gpt-3.5-turbo-0613'
-
-        app.include_router(router)
     )
     # question = '대한민국의 수도는 뭐야?'질문Unexpected indentation
 

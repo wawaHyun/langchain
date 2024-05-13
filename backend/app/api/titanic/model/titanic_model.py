@@ -3,46 +3,46 @@ from dataclasses import dataclass
 
 @dataclass
 class TitanicModel:
-    context : str
-    fname : str
-    train : object
-    test : object
-    id : str
-    label : str
+    _context : str = ''
+    _fname : str = ''
+    _train : object = None
+    _test : object = None
+    _id : str = ''
+    _label : str = ''
 
-@property
-def context(self) -> str: return self.context
+    @property
+    def context(self) -> str: return self._context
 
-@context.setter
-def context(self, context: str): self.context = context
+    @context.setter
+    def context(self, context): self._context = context
 
-@property
-def fname(self) -> str: return self.fname
+    @property
+    def fname(self) -> str: return self._fname
 
-@context.setter
-def fname(self, fname: str): self.fname = fname
+    @fname.setter
+    def fname(self, fname): self._fname = fname
 
-@property
-def train(self) -> object: return self.train
+    @property
+    def train(self) -> str: return self._train
 
-@context.setter
-def train(self, train: object): self.train = train
+    @train.setter
+    def train(self, train): self._train = train
 
-@property
-def test(self) -> object: return self.test
+    @property
+    def test(self) -> str: return self._test
 
-@context.setter
-def test(self, test: object): self.test = test
+    @test.setter
+    def test(self, test): self._test = test
 
-@property
-def id(self) -> str: return self.id
+    @property
+    def id(self) -> str: return self._id
 
-@context.setter
-def id(self, id: str): self.id = id
+    @id.setter
+    def id(self, id): self._id = id
 
-@property
-def label(self) -> str: return self.label
+    @property
+    def label(self) -> str: return self._label
 
-@context.setter
-def label(self, label: str): self.label = label
+    @label.setter
+    def label(self, label): self._label = label
 

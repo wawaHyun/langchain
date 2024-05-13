@@ -22,7 +22,7 @@ export default function Home() {
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log("input qusetion: ", watch("question"))
-    fetch('http://localhost:8000/chat/' + `${category}`, {
+    fetch('http://localhost:8000/api/chat/' + `${category}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,9 +42,9 @@ export default function Home() {
   return (
     <div className="w-screen h-screen">
       <div className="mt-[5%] ml-[5%] mr-[5%]">
+        <div className="flex justify-center gap-8 inline-fle  text-center mb-[5%] ">
 
-        <div className="flex justify-start gap-8 inline-fle  text-center">
-          <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex">
+        <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex ">
             <input type="image" onClick={handleRadio} value={"titanic"} className="Image w-[404px] h-[346px]  rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL7QuFPAtOQIiDsHM9eK32hJmHy-hCQ3cGA&s" />
             <div className="Copy self-stretch h-16 flex-col justify-center items-center gap-1 flex">
               {category === "titanic" ?
@@ -60,6 +60,8 @@ export default function Home() {
             </div>
           </div>
 
+            {/* <img className="w-[404px] h-[346px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL7QuFPAtOQIiDsHM9eK32hJmHy-hCQ3cGA&s" alt="" /> */}
+          
           <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex">
             <input type="image" onClick={handleRadio} value={"newone"} className="Image w-[404px] h-[346px]  rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo7frHxpAeNlQhhLF5KCS1fcz4kbJet-OvoQ&s" />
             <div className="Copy self-stretch h-16 flex-col justify-center items-center gap-1 flex">
@@ -94,17 +96,17 @@ export default function Home() {
 
         </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} >
+        <form onSubmit={handleSubmit(onSubmit)} >
           <div className="self-stretch text-black text-[64px] font-bold font-['Inter']">Titanic에 대해서 물어보세요!</div>
-          <div className="flex justify-start min-h-full rounded-xl h-20 mb-5">
+          <div className="flex justify-start min-h-full rounded-xl h-20 mb-3">
             <input className="w-[95%] rounded-xl border " type="sumit" placeholder="      Message ChatGPT" {...register("question", { required: true })} />
           </div>
         </form >
 
-        <div className="text-xl mt-5 text-[23px] rounded-t-lg bg-gray-100 shadow-xl shadow-gray-500">
+        <div className="text-xl h-[200px] p-5 text-[23px] rounded-t-lg bg-gray-100 shadow-xl shadow-gray-500">
           {message ? <p className="w-full mx-8"> {message} </p>
             :
-            <p className="animate-bounce opacity-50 text-[50px] text-center">Wait . . .</p>
+            <p className="animate-bounce h-full opacity-50 text-[50px] content-center text-center ">Wait . . .</p>
           }
         </div>
 

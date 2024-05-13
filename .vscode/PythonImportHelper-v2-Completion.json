@@ -24,14 +24,6 @@
         "documentation": {}
     },
     {
-        "label": "TitanicModel",
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "isExtraImport": true,
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -78,6 +70,14 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicService",
+        "importPath": "app.api.titanic.service.titanic_service",
+        "description": "app.api.titanic.service.titanic_service",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.service.titanic_service",
         "documentation": {}
     },
     {
@@ -200,115 +200,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.model.titanic_model",
         "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "class TitanicModel:\n    context : str\n    fname : str\n    train : object\n    test : object\n    id : str\n    label : str\n@property\ndef context(self) -> str: return self.context\n@context.setter",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "context",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def context(self) -> str: return self.context\n@context.setter\ndef context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "context",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "fname",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "fname",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "train",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "train",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "test",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "test",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "id",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "id",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "label",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "backend.app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "label",
-        "kind": 2,
-        "importPath": "backend.app.api.titanic.model.titanic_model",
-        "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "def label(self, label: str): self.label = label",
+        "peekOfCode": "class TitanicModel:\n    context : str = ''\n    fname : str = ''\n    train : object = None\n    test : object = None\n    id : str = ''\n    label : str = ''\n    @property\n    def context(self) -> str: return self.context\n    @context.setter",
         "detail": "backend.app.api.titanic.model.titanic_model",
         "documentation": {}
     },
@@ -317,7 +209,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.service.titanic_service",
         "description": "backend.app.api.titanic.service.titanic_service",
-        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def new_model(self,payload) -> object:\n        this = self.model\n        this.context = '../data/'\n        this.fname = payload\n        return pd.read_csv(this.context + this.fname)",
+        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def process(self):\n        print(f'process start!')\n        train_model = self.new_model('train.csv')\n        test_model = self.new_model('test.csv')\n        print(f'tranin col : {train_model.colums}')\n        print(f'test col : {test_model.colums}')\n    def new_model(self,payload) -> object:\n        this = self.model",
         "detail": "backend.app.api.titanic.service.titanic_service",
         "documentation": {}
     },
@@ -326,7 +218,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.web.titanic_router",
         "description": "backend.app.api.titanic.web.titanic_router",
-        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"answer\": \"titanic\"}",
+        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")\n    data = f.read()",
         "detail": "backend.app.api.titanic.web.titanic_router",
         "documentation": {}
     },
@@ -335,7 +227,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.web.titanic_router",
         "description": "backend.app.api.titanic.web.titanic_router",
-        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"answer\": \"titanic\"}",
+        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")\n    data = f.read()\n    print(data)\n    f.close()",
         "detail": "backend.app.api.titanic.web.titanic_router",
         "documentation": {}
     },
@@ -344,7 +236,16 @@
         "kind": 5,
         "importPath": "backend.app.api.titanic.web.titanic_router",
         "description": "backend.app.api.titanic.web.titanic_router",
-        "peekOfCode": "router = APIRouter()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"answer\": \"titanic\"}",
+        "peekOfCode": "router = APIRouter()\nservice = TitanicService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'",
+        "detail": "backend.app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "service",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.web.titanic_router",
+        "description": "backend.app.api.titanic.web.titanic_router",
+        "peekOfCode": "service = TitanicService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")",
         "detail": "backend.app.api.titanic.web.titanic_router",
         "documentation": {}
     },
@@ -353,7 +254,7 @@
         "kind": 5,
         "importPath": "backend.app.main_router",
         "description": "backend.app.main_router",
-        "peekOfCode": "router = APIRouter()\nrouter.include_router(titanic_router)",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(titanic_router, prefix=\"/chat\")",
         "detail": "backend.app.main_router",
         "documentation": {}
     },
@@ -362,7 +263,7 @@
         "kind": 6,
         "importPath": "backend.main",
         "description": "backend.main",
-        "peekOfCode": "class Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]",
+        "peekOfCode": "class Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]",
         "detail": "backend.main",
         "documentation": {}
     },
@@ -371,7 +272,7 @@
         "kind": 6,
         "importPath": "backend.main",
         "description": "backend.main",
-        "peekOfCode": "class Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,",
+        "peekOfCode": "class Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,",
         "detail": "backend.main",
         "documentation": {}
     },
@@ -389,7 +290,7 @@
         "kind": 5,
         "importPath": "backend.main",
         "description": "backend.main",
-        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nclass Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nclass Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [",
         "detail": "backend.main",
         "documentation": {}
     },
@@ -398,7 +299,7 @@
         "kind": 5,
         "importPath": "backend.main",
         "description": "backend.main",
-        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
+        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
         "detail": "backend.main",
         "documentation": {}
     },
@@ -407,7 +308,7 @@
         "kind": 5,
         "importPath": "backend.main",
         "description": "backend.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
+        "peekOfCode": "app = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
         "detail": "backend.main",
         "documentation": {}
     },
