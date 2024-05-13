@@ -1,0 +1,594 @@
+[
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.titanic.web.titanic_router",
+        "description": "app.api.titanic.web.titanic_router",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain.chat_models.openai",
+        "description": "langchain.chat_models.openai",
+        "isExtraImport": true,
+        "detail": "langchain.chat_models.openai",
+        "documentation": {}
+    },
+    {
+        "label": "HumanMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "AIMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "SystemMessage",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.main_router",
+        "description": "app.main_router",
+        "isExtraImport": true,
+        "detail": "app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "starlette.middleware.cors",
+        "description": "starlette.middleware.cors",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "importPath": "flatted",
+        "description": "flatted",
+        "isExtraImport": true,
+        "detail": "flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "importPath": "flatted",
+        "description": "flatted",
+        "isExtraImport": true,
+        "detail": "flatted",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "kind": 6,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "class TitanicModel:\n    context : str\n    fname : str\n    train : object\n    test : object\n    id : str\n    label : str\n@property\ndef context(self) -> str: return self.context\n@context.setter",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def context(self) -> str: return self.context\n@context.setter\ndef context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "fname",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "fname",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "id",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "id",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "label",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "label",
+        "kind": 2,
+        "importPath": "backend.app.api.titanic.model.titanic_model",
+        "description": "backend.app.api.titanic.model.titanic_model",
+        "peekOfCode": "def label(self, label: str): self.label = label",
+        "detail": "backend.app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicService",
+        "kind": 6,
+        "importPath": "backend.app.api.titanic.service.titanic_service",
+        "description": "backend.app.api.titanic.service.titanic_service",
+        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def new_model(self,payload) -> object:\n        this = self.model\n        this.context = '../data/'\n        this.fname = payload\n        return pd.read_csv(this.context + this.fname)",
+        "detail": "backend.app.api.titanic.service.titanic_service",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "kind": 6,
+        "importPath": "backend.app.api.titanic.web.titanic_router",
+        "description": "backend.app.api.titanic.web.titanic_router",
+        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"answer\": \"titanic\"}",
+        "detail": "backend.app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "kind": 6,
+        "importPath": "backend.app.api.titanic.web.titanic_router",
+        "description": "backend.app.api.titanic.web.titanic_router",
+        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"answer\": \"titanic\"}",
+        "detail": "backend.app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.web.titanic_router",
+        "description": "backend.app.api.titanic.web.titanic_router",
+        "peekOfCode": "router = APIRouter()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"answer\": \"titanic\"}",
+        "detail": "backend.app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.main_router",
+        "description": "backend.app.main_router",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(titanic_router)",
+        "detail": "backend.app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "kind": 6,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "class Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "kind": 6,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "class Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "chatting",
+        "kind": 2,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "def chatting(req:Request):\n    print(req)\n    chat= ChatOpenAI(\n        openai_api_key=os.environ[\"api_key\"],\n        temperature=0.1,\n        max_tokens=2048,\n        model_name = 'gpt-3.5-turbo-0613'\n    )\n    # question = '대한민국의 수도는 뭐야?'질문Unexpected indentation\n    # result = chat.predict(question)",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nclass Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "app = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "origins",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "origins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['o']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['one']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['two']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['three']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['a']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['test']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['array']",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "a2",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o2",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "oo",
+        "kind": 5,
+        "importPath": "frontend.node_modules.flatted.python.test",
+        "description": "frontend.node_modules.flatted.python.test",
+        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    }
+]

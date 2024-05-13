@@ -5,7 +5,6 @@ from langchain.schema import HumanMessage, AIMessage, SystemMessage
 import os
 from dotenv import load_dotenv
 import uvicorn
-from app.api.titanic.model.titanic_model import TitanicModel
 from app.main_router import router
 from pydantic import BaseModel
 from starlette.middleware.cors import CORSMiddleware
@@ -23,7 +22,7 @@ class Response(BaseModel):
 llm = ChatOpenAI(openai_api_key="...")
 app = FastAPI()
 
-app.include_router(router)
+
 
 origins = [
     "*"
@@ -57,6 +56,8 @@ def chatting(req:Request):
         temperature=0.1,
         max_tokens=2048,
         model_name = 'gpt-3.5-turbo-0613'
+
+        app.include_router(router)
     )
     # question = '대한민국의 수도는 뭐야?'질문Unexpected indentation
 

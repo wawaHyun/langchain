@@ -5,8 +5,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 export default function Home() {
 
-  const [Message, setMessage] = useState('')
-  const [Category, setCategory] = useState('')
+  const [message, setMessage] = useState('')
+  const [category, setCategory] = useState('')
 
   type Inputs = {
     question: string
@@ -22,7 +22,7 @@ export default function Home() {
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log("input qusetion: ", watch("question"))
-    fetch('http://localhost:8000/' + `${Category}`, {
+    fetch('http://localhost:8000/chat/' + `${category}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,37 +35,19 @@ export default function Home() {
   }
 
   const handleRadio = (e: any) => {
-    const aa = e.target.value
-    setCategory(aa)
-    console.log("select button : ", aa)
+    setCategory(e.target.value)
+    console.log("select button : ", e.target.value)
   }
 
   return (
     <div className="w-screen h-screen">
       <div className="mt-[5%] ml-[5%] mr-[5%]">
-        <form onSubmit={handleSubmit(onSubmit)} >
-          <div className="self-stretch text-black text-[64px] font-bold font-['Inter']">Titanic에 대해서 물어보세요!</div>
 
-          <div className="flex justify-start min-h-full rounded-xl h-20 mb-5">
-
-            <input className="w-[95%] rounded-xl border " type="text" placeholder="      Message ChatGPT" {...register("question", { required: true })} />
-            <button className="bg-gray-100 rounded-xl w-[5%] border" type="submit">input!</button>
-          </div>
-        </form >
-
-        {/* <div className="scrollbar-hidden rounded-lg bg-gray-100 shadow-xl shadow-gray-500 "> */}
-          <div className="text-xl ml-5 mt-5 text-[23px] ">
-              {Message ? Message :
-              <p className="animate-bounce opacity-50 text-[50px] text-center">Wait . . .</p>
-              }
-          </div>
-        {/* </div> */}
-
-        <div className="flex justify-start gap-8 inline-fle mt-[10%] text-center">
+        <div className="flex justify-start gap-8 inline-fle  text-center">
           <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex">
             <input type="image" onClick={handleRadio} value={"titanic"} className="Image w-[404px] h-[346px]  rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXL7QuFPAtOQIiDsHM9eK32hJmHy-hCQ3cGA&s" />
             <div className="Copy self-stretch h-16 flex-col justify-center items-center gap-1 flex">
-              {Category === "titanic" ?
+              {category === "titanic" ?
                 <div>
                   <div className="Title self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">titanic</div>
                   <div className="Author self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">titanic</div>
@@ -81,7 +63,7 @@ export default function Home() {
           <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex">
             <input type="image" onClick={handleRadio} value={"newone"} className="Image w-[404px] h-[346px]  rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo7frHxpAeNlQhhLF5KCS1fcz4kbJet-OvoQ&s" />
             <div className="Copy self-stretch h-16 flex-col justify-center items-center gap-1 flex">
-              {Category === "newone" ?
+              {category === "newone" ?
                 <div>
                   <div className="Title self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">newone</div>
                   <div className="Author self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">newone</div>
@@ -97,7 +79,7 @@ export default function Home() {
           <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex">
             <input type="image" onClick={handleRadio} value={"newone2"} className="Image w-[404px] h-[346px]  rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbcaAuLQbW2Nobxavn2TZn3ffD6s_u_DUfw&s" />
             <div className="Copy self-stretch h-16 flex-col justify-center items-center gap-1 flex">
-              {Category === "newone2" ?
+              {category === "newone2" ?
                 <div>
                   <div className="Title self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">newone2</div>
                   <div className="Author self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">newone2</div>
@@ -110,8 +92,20 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
 
+          <form onSubmit={handleSubmit(onSubmit)} >
+          <div className="self-stretch text-black text-[64px] font-bold font-['Inter']">Titanic에 대해서 물어보세요!</div>
+          <div className="flex justify-start min-h-full rounded-xl h-20 mb-5">
+            <input className="w-[95%] rounded-xl border " type="sumit" placeholder="      Message ChatGPT" {...register("question", { required: true })} />
+          </div>
+        </form >
 
+        <div className="text-xl mt-5 text-[23px] rounded-t-lg bg-gray-100 shadow-xl shadow-gray-500">
+          {message ? <p className="w-full mx-8"> {message} </p>
+            :
+            <p className="animate-bounce opacity-50 text-[50px] text-center">Wait . . .</p>
+          }
         </div>
 
       </div>
