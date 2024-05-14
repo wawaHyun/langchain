@@ -17,7 +17,7 @@ const menus =[
   return (
 <div className="TabList w-[255px] h-14 p-2 bg-neutral-100 rounded-xl justify-start items-start gap-2 inline-flex">
   <div>
-   {/* {Movebutton(menus)} */}
+   {Movebutton(menus)}
   </div>
 </div>
   )   

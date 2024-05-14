@@ -81,6 +81,15 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "importPath": "app.api.titanic.web.titanic_router",
         "description": "app.api.titanic.web.titanic_router",
@@ -200,7 +209,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.model.titanic_model",
         "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "class TitanicModel:\n    context : str = ''\n    fname : str = ''\n    train : object = None\n    test : object = None\n    id : str = ''\n    label : str = ''\n    @property\n    def context(self) -> str: return self.context\n    @context.setter",
+        "peekOfCode": "class TitanicModel:\n    _context : str = ''\n    _fname : str = ''\n    _train : object = None\n    _test : object = None\n    _id : str = ''\n    _label : str = ''\n    @property\n    def context(self) -> str: return self._context\n    @context.setter",
         "detail": "backend.app.api.titanic.model.titanic_model",
         "documentation": {}
     },
@@ -209,7 +218,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.service.titanic_service",
         "description": "backend.app.api.titanic.service.titanic_service",
-        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def process(self):\n        print(f'process start!')\n        train_model = self.new_model('train.csv')\n        test_model = self.new_model('test.csv')\n        print(f'tranin col : {train_model.colums}')\n        print(f'test col : {test_model.colums}')\n    def new_model(self,payload) -> object:\n        this = self.model",
+        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def process(self):\n        print(f'process start!')\n        this = self.model\n        this.train = self.new_model('train.csv')\n        this.test = self.new_model('test.csv')\n        print(f'tranin cols : {this.train.columns}')\n        print(f'test cols : {this.test.columns}')\n        this.id = this.test['PassengerId']",
         "detail": "backend.app.api.titanic.service.titanic_service",
         "documentation": {}
     },
