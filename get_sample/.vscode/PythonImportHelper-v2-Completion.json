@@ -1,0 +1,201 @@
+[
+    {
+        "label": "Member",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "memberlist",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "my100",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "BMI",
+        "importPath": "example.bmi",
+        "description": "example.bmi",
+        "isExtraImport": true,
+        "detail": "example.bmi",
+        "documentation": {}
+    },
+    {
+        "label": "BitBank",
+        "kind": 6,
+        "importPath": "example.bit_bank",
+        "description": "example.bit_bank",
+        "peekOfCode": "class BitBank:\n    def __init__(self) -> None:\n        '''\n        [요구사항(RFP)]\n        은행이름은 비트은행이다.\n        입금자 이름(name), 계좌번호(account_number), 금액(money) 속성값으로 계좌를 생성한다.\n        계좌번호는 3자리-2자리-6자리 형태로 랜덤하게 생성된다.\n        예를들면 123-12-123456 이다.\n        금액은 100 ~ 999 사이로 랜덤하게 입금된다. (단위는 만단위로 암묵적으로 판단한다)\n        '''",
+        "detail": "example.bit_bank",
+        "documentation": {}
+    },
+    {
+        "label": "BMI",
+        "kind": 6,
+        "importPath": "example.bmi",
+        "description": "example.bmi",
+        "peekOfCode": "class BMI():\n    member = Member()\n    def bmi_try(self) -> None:\n        '''utils.py / Members(), myRandom() 를 이용하여 BMI 지수를 구하는 계산기를 작성합니다.'''\n        this = self.member\n        print(f'여기까지 ㅇㅋ')\n        this = self.create_rows(this)\n        print(f'여기까지 ㅇㅋ')\n        print(f'여기까지 ㅇㅋ')\n        print(f'this : ', this)",
+        "detail": "example.bmi",
+        "documentation": {}
+    },
+    {
+        "label": "Calculator",
+        "kind": 6,
+        "importPath": "example.calculator",
+        "description": "example.calculator",
+        "peekOfCode": "class Calculator:\n    def __init__(self, a, opcode, b):\n        print(f'utils.py / myRandom() 을 이용하여 자동 랜덤 계산기를 생성합니다')\n        print('(ex) 5 + 4 = 9')",
+        "detail": "example.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "Dice",
+        "kind": 6,
+        "importPath": "example.dice",
+        "description": "example.dice",
+        "peekOfCode": "class Dice:\n    def __init__(self, sides=6):\n        print(f'utils.py myRandom() 를 이용하여 주사위 객체를 생성합니다')",
+        "detail": "example.dice",
+        "documentation": {}
+    },
+    {
+        "label": "Grade",
+        "kind": 6,
+        "importPath": "example.grade",
+        "description": "example.grade",
+        "peekOfCode": "class Grade:\n    def __init__(self) -> None:\n        # 아래 주석된 부분을 완성합니다.\n        kor = myRandom(0,100)\n        eng = myRandom(0, 100)\n        math = myRandom(0, 100)\n        # sum = self.sum(kor, eng, math)\n        # avg = self.agv(kor, eng, math)\n        # grade = self.getGrade()\n        # passChk = self.passChk()",
+        "detail": "example.grade",
+        "documentation": {}
+    },
+    {
+        "label": "LeapYear",
+        "kind": 6,
+        "importPath": "example.leap_year",
+        "description": "example.leap_year",
+        "peekOfCode": "class LeapYear:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 윤년계산기 객체를 생성합니다')\n        print ('(ex) 2020년은 윤년입니다. 단 컴프리헨션을 사용합니다')",
+        "detail": "example.leap_year",
+        "documentation": {}
+    },
+    {
+        "label": "RPS",
+        "kind": 6,
+        "importPath": "example.rps",
+        "description": "example.rps",
+        "peekOfCode": "class RPS:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 가위바위보 객체를 생성합니다')",
+        "detail": "example.rps",
+        "documentation": {}
+    },
+    {
+        "label": "Member",
+        "kind": 6,
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "peekOfCode": "class Member:\n    name : str = ''\n    height : float =0\n    weight : float =0\n    @property\n    def name(self) -> str: return self._name\n    @name.setter\n    def name(self, name): self._name = name\n    @property\n    def height(self) -> float: return self._height",
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "kind": 2,
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "peekOfCode": "def myRandom(start, end): return random.randint(start, end-1)\ndef my100(): return myRandom(1,100)\ndef memberlist() -> []:\n    return ['홍정명', '노홍주', '전종현', '정경준', '양정오',\n           \"권혜민\", \"서성민\", \"조현국\", \"김한슬\", \"김진영\",\n           '심민혜', '권솔이', '김지혜', '하진희', '최은아',\n           '최민서', '한성수', '김윤섭', '김승현',\n           \"강 민\", \"최건일\", \"유재혁\", \"김아름\", \"장원종\"]",
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "my100",
+        "kind": 2,
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "peekOfCode": "def my100(): return myRandom(1,100)\ndef memberlist() -> []:\n    return ['홍정명', '노홍주', '전종현', '정경준', '양정오',\n           \"권혜민\", \"서성민\", \"조현국\", \"김한슬\", \"김진영\",\n           '심민혜', '권솔이', '김지혜', '하진희', '최은아',\n           '최민서', '한성수', '김윤섭', '김승현',\n           \"강 민\", \"최건일\", \"유재혁\", \"김아름\", \"장원종\"]",
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "memberlist",
+        "kind": 2,
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "peekOfCode": "def memberlist() -> []:\n    return ['홍정명', '노홍주', '전종현', '정경준', '양정오',\n           \"권혜민\", \"서성민\", \"조현국\", \"김한슬\", \"김진영\",\n           '심민혜', '권솔이', '김지혜', '하진희', '최은아',\n           '최민서', '한성수', '김윤섭', '김승현',\n           \"강 민\", \"최건일\", \"유재혁\", \"김아름\", \"장원종\"]",
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nbmi = BMI()\n@app.get(\"/\")\nasync def root():\n    bmi.bmi_try()\n    return {\"message\": \"oh hoh\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"localhost\", port=8000)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "bmi",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "bmi = BMI()\n@app.get(\"/\")\nasync def root():\n    bmi.bmi_try()\n    return {\"message\": \"oh hoh\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"localhost\", port=8000)",
+        "detail": "main",
+        "documentation": {}
+    }
+]

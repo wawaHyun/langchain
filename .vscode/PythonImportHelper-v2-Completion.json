@@ -8,19 +8,11 @@
         "documentation": {}
     },
     {
-        "label": "TitanicModel",
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
         "isExtraImport": true,
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "TitanicModel",
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "isExtraImport": true,
-        "detail": "app.api.titanic.model.titanic_model",
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
@@ -33,6 +25,87 @@
         "documentation": {}
     },
     {
+        "label": "DataSets",
+        "importPath": "app.api.context.data_sets",
+        "description": "app.api.context.data_sets",
+        "isExtraImport": true,
+        "detail": "app.api.context.data_sets",
+        "documentation": {}
+    },
+    {
+        "label": "DataSets",
+        "importPath": "app.api.context.data_sets",
+        "description": "app.api.context.data_sets",
+        "isExtraImport": true,
+        "detail": "app.api.context.data_sets",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "KFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "app.api.context.models",
+        "description": "app.api.context.models",
+        "isExtraImport": true,
+        "detail": "app.api.context.models",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "xarray",
+        "description": "xarray",
+        "isExtraImport": true,
+        "detail": "xarray",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -42,6 +115,14 @@
     },
     {
         "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -205,11 +286,158 @@
         "documentation": {}
     },
     {
+        "label": "Member",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "memberlist",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "my100",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "importPath": "example.utils",
+        "description": "example.utils",
+        "isExtraImport": true,
+        "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "BMI",
+        "importPath": "example.bmi",
+        "description": "example.bmi",
+        "isExtraImport": true,
+        "detail": "example.bmi",
+        "documentation": {}
+    },
+    {
+        "label": "DataSets",
+        "kind": 6,
+        "importPath": "backend.app.api.context.data_sets",
+        "description": "backend.app.api.context.data_sets",
+        "peekOfCode": "class DataSets:\n    _fname : str = '' # file name\n    _dname : str = '' # data path\n    _sname : str = '' # save path\n    _train : object = None\n    _test : object = None\n    _id : str = ''\n    _label : str = ''\n    @property\n    def fname(self) -> str: return self._fname",
+        "detail": "backend.app.api.context.data_sets",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "importPath": "backend.app.api.context.models",
+        "description": "backend.app.api.context.models",
+        "peekOfCode": "class models:\n    def __init__(self) -> None:\n        self.ds = DataSets()\n        this = self.ds\n        this.dname = './app/api/titanic/data/'\n        this.sname = './app/api/titanic/save/'\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        # index_col=0 해야 기존 index 값이 유지된다. \n        # 0은 컬럼명 중에서 첫번째를 의미한다.(배열구조)",
+        "detail": "backend.app.api.context.models",
+        "documentation": {}
+    },
+    {
+        "label": "1st",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "1st = Upper\n2nd = Middle\n3rd = Lower\nage: Age is fractional if less than 1.\nIf the age is estimated, is it in the form of xx.5\nsibsp: The dataset defines family relations in this way...\nSibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "2nd",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "2nd = Middle\n3rd = Lower\nage: Age is fractional if less than 1.\nIf the age is estimated, is it in the form of xx.5\nsibsp: The dataset defines family relations in this way...\nSibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "3rd",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "3rd = Lower\nage: Age is fractional if less than 1.\nIf the age is estimated, is it in the form of xx.5\nsibsp: The dataset defines family relations in this way...\nSibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Sibling",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Sibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Spouse",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Spouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Parent",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Parent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',\n'Age',\n'SibSp',",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Child",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Child = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',\n'Age',\n'SibSp',\n'Parch',",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "컬럼(column)",
+        "kind": 5,
+        "importPath": "backend.app.api.titanic.model.titanic_feature",
+        "description": "backend.app.api.titanic.model.titanic_feature",
+        "peekOfCode": "컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',\n'Age',\n'SibSp',\n'Parch',\n'Ticket',\n'Fare',",
+        "detail": "backend.app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
         "label": "TitanicModel",
         "kind": 6,
         "importPath": "backend.app.api.titanic.model.titanic_model",
         "description": "backend.app.api.titanic.model.titanic_model",
-        "peekOfCode": "class TitanicModel:\n    _context : str = ''\n    _fname : str = ''\n    _train : object = None\n    _test : object = None\n    _id : str = ''\n    _label : str = ''\n    @property\n    def context(self) -> str: return self._context\n    @context.setter",
+        "peekOfCode": "class TitanicModel(object):\n    model = models()\n    dataset = DataSets()\n    def preprocess(self, train_fname, test_fname) -> object:\n        this = self.dataset\n        that = self.model\n        feature = ['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked']\n        # 데이터셋은 Train과 Test, Validation 3종류로 나뉘어져 있다.\n        this.train = that.new_dataframe_no_index(train_fname)\n        this.test = that.new_dataframe_no_index(test_fname)",
         "detail": "backend.app.api.titanic.model.titanic_model",
         "documentation": {}
     },
@@ -218,7 +446,7 @@
         "kind": 6,
         "importPath": "backend.app.api.titanic.service.titanic_service",
         "description": "backend.app.api.titanic.service.titanic_service",
-        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def process(self):\n        print(f'process start!')\n        this = self.model\n        this.train = self.new_model('train.csv')\n        this.test = self.new_model('test.csv')\n        print(f'tranin cols : {this.train.columns}')\n        print(f'test cols : {this.test.columns}')\n        this.id = this.test['PassengerId']",
+        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def preprocess(self) :\n        print(f'전처리 시작')\n        self.model.preprocess('train.csv', 'test.csv')\n    def modeling(self):\n        print(f'모델링 시작')\n        this = self.model\n    def learning(self):\n        print(f'학습 시작')",
         "detail": "backend.app.api.titanic.service.titanic_service",
         "documentation": {}
     },
@@ -256,6 +484,15 @@
         "description": "backend.app.api.titanic.web.titanic_router",
         "peekOfCode": "service = TitanicService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")",
         "detail": "backend.app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "특성변수",
+        "kind": 5,
+        "importPath": "backend.app.basic.ml_algorithm_10",
+        "description": "backend.app.basic.ml_algorithm_10",
+        "peekOfCode": "특성변수 = 독립변수 = 외생변수 = x변수\n목적변수 \n'''",
+        "detail": "backend.app.basic.ml_algorithm_10",
         "documentation": {}
     },
     {
@@ -499,6 +736,123 @@
         "description": "frontend.node_modules.flatted.python.test",
         "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
         "detail": "frontend.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "BitBank",
+        "kind": 6,
+        "importPath": "get_sample.example.bit_bank",
+        "description": "get_sample.example.bit_bank",
+        "peekOfCode": "class BitBank:\n    def __init__(self) -> None:\n        '''\n        [요구사항(RFP)]\n        은행이름은 비트은행이다.\n        입금자 이름(name), 계좌번호(account_number), 금액(money) 속성값으로 계좌를 생성한다.\n        계좌번호는 3자리-2자리-6자리 형태로 랜덤하게 생성된다.\n        예를들면 123-12-123456 이다.\n        금액은 100 ~ 999 사이로 랜덤하게 입금된다. (단위는 만단위로 암묵적으로 판단한다)\n        '''",
+        "detail": "get_sample.example.bit_bank",
+        "documentation": {}
+    },
+    {
+        "label": "BMI",
+        "kind": 6,
+        "importPath": "get_sample.example.bmi",
+        "description": "get_sample.example.bmi",
+        "peekOfCode": "class BMI():\n    member = Member()\n    def bmi_try(self) -> None:\n        '''utils.py / Members(), myRandom() 를 이용하여 BMI 지수를 구하는 계산기를 작성합니다.'''\n        this = self.member\n        print(f'여기까지 ㅇㅋ')\n        this = self.create_rows(this)\n        print(f'여기까지 ㅇㅋ')\n        print(f'여기까지 ㅇㅋ')\n        print(f'this : ', this)",
+        "detail": "get_sample.example.bmi",
+        "documentation": {}
+    },
+    {
+        "label": "Calculator",
+        "kind": 6,
+        "importPath": "get_sample.example.calculator",
+        "description": "get_sample.example.calculator",
+        "peekOfCode": "class Calculator:\n    def __init__(self, a, opcode, b):\n        print(f'utils.py / myRandom() 을 이용하여 자동 랜덤 계산기를 생성합니다')\n        print('(ex) 5 + 4 = 9')",
+        "detail": "get_sample.example.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "Dice",
+        "kind": 6,
+        "importPath": "get_sample.example.dice",
+        "description": "get_sample.example.dice",
+        "peekOfCode": "class Dice:\n    def __init__(self, sides=6):\n        print(f'utils.py myRandom() 를 이용하여 주사위 객체를 생성합니다')",
+        "detail": "get_sample.example.dice",
+        "documentation": {}
+    },
+    {
+        "label": "Grade",
+        "kind": 6,
+        "importPath": "get_sample.example.grade",
+        "description": "get_sample.example.grade",
+        "peekOfCode": "class Grade:\n    def __init__(self) -> None:\n        # 아래 주석된 부분을 완성합니다.\n        kor = myRandom(0,100)\n        eng = myRandom(0, 100)\n        math = myRandom(0, 100)\n        # sum = self.sum(kor, eng, math)\n        # avg = self.agv(kor, eng, math)\n        # grade = self.getGrade()\n        # passChk = self.passChk()",
+        "detail": "get_sample.example.grade",
+        "documentation": {}
+    },
+    {
+        "label": "LeapYear",
+        "kind": 6,
+        "importPath": "get_sample.example.leap_year",
+        "description": "get_sample.example.leap_year",
+        "peekOfCode": "class LeapYear:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 윤년계산기 객체를 생성합니다')\n        print ('(ex) 2020년은 윤년입니다. 단 컴프리헨션을 사용합니다')",
+        "detail": "get_sample.example.leap_year",
+        "documentation": {}
+    },
+    {
+        "label": "RPS",
+        "kind": 6,
+        "importPath": "get_sample.example.rps",
+        "description": "get_sample.example.rps",
+        "peekOfCode": "class RPS:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 가위바위보 객체를 생성합니다')",
+        "detail": "get_sample.example.rps",
+        "documentation": {}
+    },
+    {
+        "label": "Member",
+        "kind": 6,
+        "importPath": "get_sample.example.utils",
+        "description": "get_sample.example.utils",
+        "peekOfCode": "class Member:\n    name : str = ''\n    height : float =0\n    weight : float =0\n    @property\n    def name(self) -> str: return self._name\n    @name.setter\n    def name(self, name): self._name = name\n    @property\n    def height(self) -> float: return self._height",
+        "detail": "get_sample.example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "kind": 2,
+        "importPath": "get_sample.example.utils",
+        "description": "get_sample.example.utils",
+        "peekOfCode": "def myRandom(start, end): return random.randint(start, end-1)\ndef my100(): return myRandom(1,100)\ndef memberlist() -> []:\n    return ['홍정명', '노홍주', '전종현', '정경준', '양정오',\n           \"권혜민\", \"서성민\", \"조현국\", \"김한슬\", \"김진영\",\n           '심민혜', '권솔이', '김지혜', '하진희', '최은아',\n           '최민서', '한성수', '김윤섭', '김승현',\n           \"강 민\", \"최건일\", \"유재혁\", \"김아름\", \"장원종\"]",
+        "detail": "get_sample.example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "my100",
+        "kind": 2,
+        "importPath": "get_sample.example.utils",
+        "description": "get_sample.example.utils",
+        "peekOfCode": "def my100(): return myRandom(1,100)\ndef memberlist() -> []:\n    return ['홍정명', '노홍주', '전종현', '정경준', '양정오',\n           \"권혜민\", \"서성민\", \"조현국\", \"김한슬\", \"김진영\",\n           '심민혜', '권솔이', '김지혜', '하진희', '최은아',\n           '최민서', '한성수', '김윤섭', '김승현',\n           \"강 민\", \"최건일\", \"유재혁\", \"김아름\", \"장원종\"]",
+        "detail": "get_sample.example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "memberlist",
+        "kind": 2,
+        "importPath": "get_sample.example.utils",
+        "description": "get_sample.example.utils",
+        "peekOfCode": "def memberlist() -> []:\n    return ['홍정명', '노홍주', '전종현', '정경준', '양정오',\n           \"권혜민\", \"서성민\", \"조현국\", \"김한슬\", \"김진영\",\n           '심민혜', '권솔이', '김지혜', '하진희', '최은아',\n           '최민서', '한성수', '김윤섭', '김승현',\n           \"강 민\", \"최건일\", \"유재혁\", \"김아름\", \"장원종\"]",
+        "detail": "get_sample.example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "get_sample.main",
+        "description": "get_sample.main",
+        "peekOfCode": "app = FastAPI()\nbmi = BMI()\n@app.get(\"/\")\nasync def root():\n    bmi.bmi_try()\n    return {\"message\": \"oh hoh\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"localhost\", port=8000)",
+        "detail": "get_sample.main",
+        "documentation": {}
+    },
+    {
+        "label": "bmi",
+        "kind": 5,
+        "importPath": "get_sample.main",
+        "description": "get_sample.main",
+        "peekOfCode": "bmi = BMI()\n@app.get(\"/\")\nasync def root():\n    bmi.bmi_try()\n    return {\"message\": \"oh hoh\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"localhost\", port=8000)",
+        "detail": "get_sample.main",
         "documentation": {}
     }
 ]

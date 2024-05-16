@@ -26,7 +26,7 @@ async def titanic(req:Request):
     print(data)
     f.close()
 
-    result = service.process()
+    service.preprocess()
  
     print(req)
-    return {"answer": "router~! "+result}
+    return {"answer": "router~! "}

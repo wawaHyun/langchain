@@ -8,36 +8,93 @@
         "documentation": {}
     },
     {
-        "label": "TitanicModel",
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "isExtraImport": true,
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "TitanicModel",
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "isExtraImport": true,
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "TitanicModel",
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "isExtraImport": true,
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "DataSets",
+        "importPath": "app.api.context.data_sets",
+        "description": "app.api.context.data_sets",
+        "isExtraImport": true,
+        "detail": "app.api.context.data_sets",
+        "documentation": {}
+    },
+    {
+        "label": "DataSets",
+        "importPath": "app.api.context.data_sets",
+        "description": "app.api.context.data_sets",
+        "isExtraImport": true,
+        "detail": "app.api.context.data_sets",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "KFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "app.api.context.models",
+        "description": "app.api.context.models",
+        "isExtraImport": true,
+        "detail": "app.api.context.models",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "xarray",
+        "description": "xarray",
+        "isExtraImport": true,
+        "detail": "xarray",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicModel",
+        "importPath": "app.api.titanic.model.titanic_model",
+        "description": "app.api.titanic.model.titanic_model",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.model.titanic_model",
         "documentation": {}
     },
     {
@@ -78,6 +135,23 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "TitanicService",
+        "importPath": "app.api.titanic.service.titanic_service",
+        "description": "app.api.titanic.service.titanic_service",
+        "isExtraImport": true,
+        "detail": "app.api.titanic.service.titanic_service",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
         "documentation": {}
     },
     {
@@ -171,119 +245,101 @@
         "documentation": {}
     },
     {
+        "label": "DataSets",
+        "kind": 6,
+        "importPath": "app.api.context.data_sets",
+        "description": "app.api.context.data_sets",
+        "peekOfCode": "class DataSets:\n    _fname : str = '' # file name\n    _dname : str = '' # data path\n    _sname : str = '' # save path\n    _train : object = None\n    _test : object = None\n    _id : str = ''\n    _label : str = ''\n    @property\n    def fname(self) -> str: return self._fname",
+        "detail": "app.api.context.data_sets",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "importPath": "app.api.context.models",
+        "description": "app.api.context.models",
+        "peekOfCode": "class models:\n    def __init__(self) -> None:\n        self.ds = DataSets()\n        this = self.ds\n        this.dname = './app/api/titanic/data/'\n        this.sname = './app/api/titanic/save/'\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        # index_col=0 해야 기존 index 값이 유지된다. \n        # 0은 컬럼명 중에서 첫번째를 의미한다.(배열구조)",
+        "detail": "app.api.context.models",
+        "documentation": {}
+    },
+    {
+        "label": "1st",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "1st = Upper\n2nd = Middle\n3rd = Lower\nage: Age is fractional if less than 1.\nIf the age is estimated, is it in the form of xx.5\nsibsp: The dataset defines family relations in this way...\nSibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "2nd",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "2nd = Middle\n3rd = Lower\nage: Age is fractional if less than 1.\nIf the age is estimated, is it in the form of xx.5\nsibsp: The dataset defines family relations in this way...\nSibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "3rd",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "3rd = Lower\nage: Age is fractional if less than 1.\nIf the age is estimated, is it in the form of xx.5\nsibsp: The dataset defines family relations in this way...\nSibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Sibling",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Sibling = brother, sister, stepbrother, stepsister\nSpouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Spouse",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Spouse = husband, wife (mistresses and fiancés were ignored)\nparch: The dataset defines family relations in this way...\nParent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Parent",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Parent = mother, father\nChild = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',\n'Age',\n'SibSp',",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "Child",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "Child = daughter, son, stepdaughter, stepson\nSome children travelled only with a nanny, therefore parch=0 for them.\n컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',\n'Age',\n'SibSp',\n'Parch',",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
+        "label": "컬럼(column)",
+        "kind": 5,
+        "importPath": "app.api.titanic.model.titanic_feature",
+        "description": "app.api.titanic.model.titanic_feature",
+        "peekOfCode": "컬럼(column) = 변수(variable) = 피처(feature)\n'Survived', --> label\n'Pclass',\n'Name',\n'Sex',\n'Age',\n'SibSp',\n'Parch',\n'Ticket',\n'Fare',",
+        "detail": "app.api.titanic.model.titanic_feature",
+        "documentation": {}
+    },
+    {
         "label": "TitanicModel",
         "kind": 6,
         "importPath": "app.api.titanic.model.titanic_model",
         "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "class TitanicModel:\n    context : str\n    fname : str\n    train : object\n    test : object\n    id : str\n    label : str\n@property\ndef context(self) -> str: return self.context\n@context.setter",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "context",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def context(self) -> str: return self.context\n@context.setter\ndef context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "context",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def context(self, context: str): self.context = context\n@property\ndef fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "fname",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def fname(self) -> str: return self.fname\n@context.setter\ndef fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "fname",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def fname(self, fname: str): self.fname = fname\n@property\ndef train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "train",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def train(self) -> object: return self.train\n@context.setter\ndef train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "train",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def train(self, train: object): self.train = train\n@property\ndef test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "test",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def test(self) -> object: return self.test\n@context.setter\ndef test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "test",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def test(self, test: object): self.test = test\n@property\ndef id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "id",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def id(self) -> str: return self.id\n@context.setter\ndef id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "id",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def id(self, id: str): self.id = id\n@property\ndef label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "label",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def label(self) -> str: return self.label\n@context.setter\ndef label(self, label: str): self.label = label",
-        "detail": "app.api.titanic.model.titanic_model",
-        "documentation": {}
-    },
-    {
-        "label": "label",
-        "kind": 2,
-        "importPath": "app.api.titanic.model.titanic_model",
-        "description": "app.api.titanic.model.titanic_model",
-        "peekOfCode": "def label(self, label: str): self.label = label",
+        "peekOfCode": "class TitanicModel(object):\n    model = models()\n    dataset = DataSets()\n    def preprocess(self, train_fname, test_fname) -> object:\n        this = self.dataset\n        that = self.model\n        feature = ['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked']\n        # 데이터셋은 Train과 Test, Validation 3종류로 나뉘어져 있다.\n        this.train = that.new_dataframe_no_index(train_fname)\n        this.test = that.new_dataframe_no_index(test_fname)",
         "detail": "app.api.titanic.model.titanic_model",
         "documentation": {}
     },
@@ -292,7 +348,7 @@
         "kind": 6,
         "importPath": "app.api.titanic.service.titanic_service",
         "description": "app.api.titanic.service.titanic_service",
-        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def new_model(self,payload) -> object:\n        this = self.model\n        this.context = '../data/'\n        this.fname = payload\n        return pd.read_csv(this.context + this.fname)",
+        "peekOfCode": "class TitanicService:\n    model = TitanicModel()\n    def preprocess(self) :\n        print(f'전처리 시작')\n        self.model.preprocess('train.csv', 'test.csv')\n    def modeling(self):\n        print(f'모델링 시작')\n        this = self.model\n    def learning(self):\n        print(f'학습 시작')",
         "detail": "app.api.titanic.service.titanic_service",
         "documentation": {}
     },
@@ -301,7 +357,7 @@
         "kind": 6,
         "importPath": "app.api.titanic.web.titanic_router",
         "description": "app.api.titanic.web.titanic_router",
-        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"titanic\": \"titanic\"}",
+        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")\n    data = f.read()",
         "detail": "app.api.titanic.web.titanic_router",
         "documentation": {}
     },
@@ -310,7 +366,7 @@
         "kind": 6,
         "importPath": "app.api.titanic.web.titanic_router",
         "description": "app.api.titanic.web.titanic_router",
-        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"titanic\": \"titanic\"}",
+        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")\n    data = f.read()\n    print(data)\n    f.close()",
         "detail": "app.api.titanic.web.titanic_router",
         "documentation": {}
     },
@@ -319,8 +375,26 @@
         "kind": 5,
         "importPath": "app.api.titanic.web.titanic_router",
         "description": "app.api.titanic.web.titanic_router",
-        "peekOfCode": "router = APIRouter()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완\")\n    print(req)\n    return {\"titanic\": \"titanic\"}",
+        "peekOfCode": "router = APIRouter()\nservice = TitanicService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'",
         "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "service",
+        "kind": 5,
+        "importPath": "app.api.titanic.web.titanic_router",
+        "description": "app.api.titanic.web.titanic_router",
+        "peekOfCode": "service = TitanicService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.post(\"/titanic\")\nasync def titanic(req:Request):\n    print(\"titanic 진입완1\")\n    hello = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\backend\\\\app\\\\api\\\\titanic\\\\data\\\\hellow.txt'\n    f = open(hello, \"r\", encoding=\"utf-8\")",
+        "detail": "app.api.titanic.web.titanic_router",
+        "documentation": {}
+    },
+    {
+        "label": "특성변수",
+        "kind": 5,
+        "importPath": "app.basic.ml_algorithm_10",
+        "description": "app.basic.ml_algorithm_10",
+        "peekOfCode": "특성변수 = 독립변수 = 외생변수 = x변수\n목적변수 \n'''",
+        "detail": "app.basic.ml_algorithm_10",
         "documentation": {}
     },
     {
@@ -328,7 +402,7 @@
         "kind": 5,
         "importPath": "app.main_router",
         "description": "app.main_router",
-        "peekOfCode": "router = APIRouter()\nrouter.include_router(titanic_router)",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(titanic_router, prefix=\"/chat\")",
         "detail": "app.main_router",
         "documentation": {}
     },
@@ -337,7 +411,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]",
+        "peekOfCode": "class Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]",
         "detail": "main",
         "documentation": {}
     },
@@ -346,7 +420,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,",
+        "peekOfCode": "class Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,",
         "detail": "main",
         "documentation": {}
     },
@@ -364,7 +438,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nclass Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.abspath(__file__))\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\nclass Request(BaseModel):\n    question: str\nclass Response(BaseModel):\n    answer: str\nllm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [",
         "detail": "main",
         "documentation": {}
     },
@@ -373,7 +447,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
+        "peekOfCode": "llm = ChatOpenAI(openai_api_key=\"...\")\napp = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,",
         "detail": "main",
         "documentation": {}
     },
@@ -382,7 +456,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(router)\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
+        "peekOfCode": "app = FastAPI()\napp.include_router(router, prefix=\"/api\")\norigins = [\n    \"*\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
         "detail": "main",
         "documentation": {}
     },
