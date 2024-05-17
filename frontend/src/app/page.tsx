@@ -1,5 +1,6 @@
 'use client'
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -7,6 +8,8 @@ export default function Home() {
 
   const [message, setMessage] = useState('')
   const [category, setCategory] = useState('')
+
+  const router = useRouter();
 
   type Inputs = {
     question: string
@@ -98,7 +101,19 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="Card w-[404px] h-[434px] flex-col justify-start items-center gap-6 inline-flex">
+            <input type="text" onClick={()=>router.push("./page/pythonPage")} className="Image w-[404px] h-[346px]  rounded-lg" />
+            <div className="Copy self-stretch h-16 flex-col justify-center items-center gap-1 flex">
+                <div>
+                  <div className="Title self-stretch text-black text-[32px] font-bold font-['Inter'] leading-[30px]">Python sample</div>
+                  <div className="Author self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">gogogo</div>
+                </div>
+            </div>
+          </div>
+
+
         </div>
+
 
         <form onSubmit={handleSubmit(onSubmit)} className="">
           <div className="self-stretch text-black text-[64px] font-bold font-['Inter']">

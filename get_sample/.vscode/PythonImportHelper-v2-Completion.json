@@ -1,26 +1,84 @@
 [
     {
-        "label": "Member",
-        "importPath": "example.utils",
-        "description": "example.utils",
+        "label": "datetime",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "example.utils",
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "Member",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
         "documentation": {}
     },
     {
         "label": "memberlist",
-        "importPath": "example.utils",
-        "description": "example.utils",
+        "importPath": "utils",
+        "description": "utils",
         "isExtraImport": true,
-        "detail": "example.utils",
+        "detail": "utils",
         "documentation": {}
     },
     {
-        "label": "my100",
-        "importPath": "example.utils",
-        "description": "example.utils",
+        "label": "myRandom",
+        "importPath": "utils",
+        "description": "utils",
         "isExtraImport": true,
-        "detail": "example.utils",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "urlopen",
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "isExtraImport": true,
+        "detail": "urllib.request",
         "documentation": {}
     },
     {
@@ -82,11 +140,36 @@
         "documentation": {}
     },
     {
-        "label": "BitBank",
+        "label": "LeapYear",
+        "importPath": "example.leap_year",
+        "description": "example.leap_year",
+        "isExtraImport": true,
+        "detail": "example.leap_year",
+        "documentation": {}
+    },
+    {
+        "label": "RPS",
+        "importPath": "get_sample.example.rps",
+        "description": "get_sample.example.rps",
+        "isExtraImport": true,
+        "detail": "get_sample.example.rps",
+        "documentation": {}
+    },
+    {
+        "label": "Account",
         "kind": 6,
         "importPath": "example.bit_bank",
         "description": "example.bit_bank",
-        "peekOfCode": "class BitBank:\n    def __init__(self) -> None:\n        '''\n        [요구사항(RFP)]\n        은행이름은 비트은행이다.\n        입금자 이름(name), 계좌번호(account_number), 금액(money) 속성값으로 계좌를 생성한다.\n        계좌번호는 3자리-2자리-6자리 형태로 랜덤하게 생성된다.\n        예를들면 123-12-123456 이다.\n        금액은 100 ~ 999 사이로 랜덤하게 입금된다. (단위는 만단위로 암묵적으로 판단한다)\n        '''",
+        "peekOfCode": "class Account:\n    def __init__(self, name, account_number, money) -> None:\n        '''\n        [요구사항(RFP)]\n        은행이름은 비트은행이다.\n        입금자 이름(name), 계좌번호(account_number), 금액(money) 속성값으로 계좌를 생성한다.\n        계좌번호는 3자리-2자리-6자리 형태로 랜덤하게 생성된다.\n        예를들면 123-12-123456 이다.\n        금액은 100 ~ 999 사이로 랜덤하게 입금된다. (단위는 만단위로 암묵적으로 판단한다)\n        '''",
+        "detail": "example.bit_bank",
+        "documentation": {}
+    },
+    {
+        "label": "today",
+        "kind": 5,
+        "importPath": "example.bit_bank",
+        "description": "example.bit_bank",
+        "peekOfCode": "today = datetime.datetime.now()\nclass Account:\n    def __init__(self, name, account_number, money) -> None:\n        '''\n        [요구사항(RFP)]\n        은행이름은 비트은행이다.\n        입금자 이름(name), 계좌번호(account_number), 금액(money) 속성값으로 계좌를 생성한다.\n        계좌번호는 3자리-2자리-6자리 형태로 랜덤하게 생성된다.\n        예를들면 123-12-123456 이다.\n        금액은 100 ~ 999 사이로 랜덤하게 입금된다. (단위는 만단위로 암묵적으로 판단한다)",
         "detail": "example.bit_bank",
         "documentation": {}
     },
@@ -95,7 +178,7 @@
         "kind": 6,
         "importPath": "example.bmi",
         "description": "example.bmi",
-        "peekOfCode": "class BMI():\n    member = Member()\n    def bmi_try(self) -> None:\n        '''utils.py / Members(), myRandom() 를 이용하여 BMI 지수를 구하는 계산기를 작성합니다.'''\n        this = self.member\n        print(f'여기까지 ㅇㅋ')\n        this = self.create_rows(this)\n        print(f'여기까지 ㅇㅋ')\n        print(f'여기까지 ㅇㅋ')\n        print(f'this : ', this)",
+        "peekOfCode": "class BMI():\n    member = Member()\n    def __init__(self) -> None:\n        '''utils.py / Members(), myRandom() 를 이용하여 BMI 지수를 구하는 계산기를 작성합니다.'''\n    def getgetBMI(self, height, weight) :\n        this = self.member\n        print(f'여기까지 ㅇㅋ')\n        this = self.create_rows(this)\n        print(f'여기까지 ㅇㅋ')\n        print(f'여기까지 ㅇㅋ')",
         "detail": "example.bmi",
         "documentation": {}
     },
@@ -106,6 +189,24 @@
         "description": "example.calculator",
         "peekOfCode": "class Calculator:\n    def __init__(self, a, opcode, b):\n        print(f'utils.py / myRandom() 을 이용하여 자동 랜덤 계산기를 생성합니다')\n        print('(ex) 5 + 4 = 9')",
         "detail": "example.calculator",
+        "documentation": {}
+    },
+    {
+        "label": "BugsMusic",
+        "kind": 6,
+        "importPath": "example.crawling",
+        "description": "example.crawling",
+        "peekOfCode": "class BugsMusic(object):\n    def __init__(self) -> None:\n        self.url = 'https://music.bugs.co.kr/chart/track/realtime/total?'\n        self.headers = {'User-Agent': 'Mozilla/5.0'}\n        self.class_name = []\n        self.title_list = []\n        self.artist_list = []\n        self.dict = {}\n    def set_url(self, detail):\n        self.url = requests.get(f'{self.url}{detail}', headers=self.headers).text",
+        "detail": "example.crawling",
+        "documentation": {}
+    },
+    {
+        "label": "ScrapBugs",
+        "kind": 6,
+        "importPath": "example.crawling2",
+        "description": "example.crawling2",
+        "peekOfCode": "class ScrapBugs(object):\n    def __init__(self) -> None:\n        pass\n    def scrap(self) -> {}:\n        print('벅스 뮤직 사이트에서 데이터를 수집합니다.')\n        url = 'https://music.bugs.co.kr/chart/track/realtime/total?'\n        html_doc = urlopen(url)\n        soup = BeautifulSoup(html_doc, 'lxml')\n        list1 = self.find_music(soup,'title')\n        list2 = self.find_music(soup,'artist')",
+        "detail": "example.crawling2",
         "documentation": {}
     },
     {
@@ -131,7 +232,7 @@
         "kind": 6,
         "importPath": "example.leap_year",
         "description": "example.leap_year",
-        "peekOfCode": "class LeapYear:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 윤년계산기 객체를 생성합니다')\n        print ('(ex) 2020년은 윤년입니다. 단 컴프리헨션을 사용합니다')",
+        "peekOfCode": "class LeapYear:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 윤년계산기 객체를 생성합니다')\n        print ('(ex) 2020년은 윤년입니다. 단 컴프리헨션을 사용합니다')\n    def is_leap_year(self):\n        y = myRandom(2000,2024)\n        s1 = '윤년' if( y%4==0 and y % 100!=0 ) else '평년'\n        s2 = '윤년' if ( y% 400 == 0 ) else '평년'\n        s = '윤년' if ((y%4==0 and y % 100!=0) or y% 400 == 0 ) else '평년'\n        print(f'{y}는 {s}다')",
         "detail": "example.leap_year",
         "documentation": {}
     },
@@ -140,7 +241,7 @@
         "kind": 6,
         "importPath": "example.rps",
         "description": "example.rps",
-        "peekOfCode": "class RPS:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 가위바위보 객체를 생성합니다')",
+        "peekOfCode": "class RPS:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 가위바위보 객체를 생성합니다')\n    # def play(self):\n    #     c = myRandom(1,3)\n    #     p = input('가위', '바위', '보')\n    #     # 1: 가위, 2: 바위, 3: 보\n    #     rps = ['가위', '바위', '보']\n    #     if p == rps[c-1] :\n    #         print(f'컴퓨터: {rps[c-1]}, 당신 : {p}, 비겼습니다.')",
         "detail": "example.rps",
         "documentation": {}
     },
@@ -185,16 +286,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI()\nbmi = BMI()\n@app.get(\"/\")\nasync def root():\n    bmi.bmi_try()\n    return {\"message\": \"oh hoh\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"localhost\", port=8000)",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "bmi",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "bmi = BMI()\n@app.get(\"/\")\nasync def root():\n    bmi.bmi_try()\n    return {\"message\": \"oh hoh\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"localhost\", port=8000)",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/api/sample/bmi\")\nasync def root():\n    result = BMI.getBMI()\n    return {\"answer\": \"bmi : {result}\"}\n@app.get(\"/api/sample/leapyear\")\nasync def root():\n    result = LeapYear.is_leap_year()\n    return {\"answer\": \"leapyear : {result}\"}\n@app.get(\"/api/sample/rps\")",
         "detail": "main",
         "documentation": {}
     }
