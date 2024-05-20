@@ -1,5 +1,112 @@
 [
     {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "DataModel",
+        "importPath": "context.model.data_model",
+        "description": "context.model.data_model",
+        "isExtraImport": true,
+        "detail": "context.model.data_model",
+        "documentation": {}
+    },
+    {
+        "label": "DataModel",
+        "importPath": "context.model.data_model",
+        "description": "context.model.data_model",
+        "isExtraImport": true,
+        "detail": "context.model.data_model",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeDataset",
+        "importPath": "crime.model.crime_dataset",
+        "description": "crime.model.crime_dataset",
+        "isExtraImport": true,
+        "detail": "crime.model.crime_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeDataset",
+        "importPath": "crime.model.crime_dataset",
+        "description": "crime.model.crime_dataset",
+        "isExtraImport": true,
+        "detail": "crime.model.crime_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeModel",
+        "importPath": "crime.model.crime_model",
+        "description": "crime.model.crime_model",
+        "isExtraImport": true,
+        "detail": "crime.model.crime_model",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeModel",
+        "importPath": "crime.model.crime_model",
+        "description": "crime.model.crime_model",
+        "isExtraImport": true,
+        "detail": "crime.model.crime_model",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -26,6 +133,14 @@
     },
     {
         "label": "memberlist",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "myRandom",
         "importPath": "utils",
         "description": "utils",
         "isExtraImport": true,
@@ -82,11 +197,225 @@
         "documentation": {}
     },
     {
-        "label": "myRandom",
-        "importPath": "example.utils",
-        "description": "example.utils",
+        "label": "*",
+        "importPath": "abc",
+        "description": "abc",
         "isExtraImport": true,
-        "detail": "example.utils",
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "Reader",
+        "importPath": "example.crime_util",
+        "description": "example.crime_util",
+        "isExtraImport": true,
+        "detail": "example.crime_util",
+        "documentation": {}
+    },
+    {
+        "label": "Kkma",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Komoran",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Okt",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Hannanum",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Kkma",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Komoran",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Okt",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "Hannanum",
+        "importPath": "konlpy.tag",
+        "description": "konlpy.tag",
+        "isExtraImport": true,
+        "detail": "konlpy.tag",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "konlpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "konlpy",
+        "description": "konlpy",
+        "detail": "konlpy",
+        "documentation": {}
+    },
+    {
+        "label": "nltk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nltk",
+        "description": "nltk",
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "FreqDist",
+        "importPath": "nltk",
+        "description": "nltk",
+        "isExtraImport": true,
+        "detail": "nltk",
+        "documentation": {}
+    },
+    {
+        "label": "tweepy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tweepy",
+        "description": "tweepy",
+        "detail": "tweepy",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "PrinterBase",
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "isExtraImport": true,
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ReaderBase",
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "isExtraImport": true,
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ScraperBase",
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "isExtraImport": true,
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "googlemaps",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "googlemaps",
+        "description": "googlemaps",
+        "detail": "googlemaps",
+        "documentation": {}
+    },
+    {
+        "label": "Kiwoom",
+        "importPath": "pykiwoom.kiwoom",
+        "description": "pykiwoom.kiwoom",
+        "isExtraImport": true,
+        "detail": "pykiwoom.kiwoom",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "pykiwoom.kiwoom",
+        "description": "pykiwoom.kiwoom",
+        "isExtraImport": true,
+        "detail": "pykiwoom.kiwoom",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
         "documentation": {}
     },
     {
@@ -98,11 +427,28 @@
         "documentation": {}
     },
     {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
         "isExtraImport": true,
-        "detail": "dataclasses",
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "WordCloud",
+        "importPath": "wordcloud",
+        "description": "wordcloud",
+        "isExtraImport": true,
+        "detail": "wordcloud",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -153,6 +499,60 @@
         "description": "get_sample.example.rps",
         "isExtraImport": true,
         "detail": "get_sample.example.rps",
+        "documentation": {}
+    },
+    {
+        "label": "DataModel",
+        "kind": 6,
+        "importPath": "context.model.data_model",
+        "description": "context.model.data_model",
+        "peekOfCode": "class DataModel:\n    _dname : str = ''\n    _sname : str = ''\n    _fname : str = ''\n    _train : str = ''\n    _test : str = ''\n    _id : str = ''\n    _label : str = ''\n    @property\n    def dname(self) -> str : return self._dname",
+        "detail": "context.model.data_model",
+        "documentation": {}
+    },
+    {
+        "label": "MemberModel",
+        "kind": 6,
+        "importPath": "context.model.member_model",
+        "description": "context.model.member_model",
+        "peekOfCode": "class MemberModel:\n    _name : str = ''\n    _height : float = 0.0\n    _weight : float = 0.0\n    @property\n    def name(self) -> str: return self._name\n    @name.setter\n    def name(self, name: str): self._name = name\n    @property\n    def height(self) -> float: return self._height",
+        "detail": "context.model.member_model",
+        "documentation": {}
+    },
+    {
+        "label": "DataService",
+        "kind": 6,
+        "importPath": "context.service.data_service",
+        "description": "context.service.data_service",
+        "peekOfCode": "class DataService:\n    def __init__(self):\n        self.data = DataModel()\n        this = self.data\n        this.dname = './data/'\n        this.sname = './save/'\n    def get_sname(self):\n        return self.data.sname\n    def new_dframe_idx(self, fname: str) -> object:\n        this = self.data",
+        "detail": "context.service.data_service",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeDataset",
+        "kind": 6,
+        "importPath": "crime.model.crime_dataset",
+        "description": "crime.model.crime_dataset",
+        "peekOfCode": "class CrimeDataset:\n    _dname : str = ''\n    _sname : str = ''\n    _fname : str = ''\n    _cctv : str = ''\n    _cctv20 : str = ''\n    _crime : str = ''\n    _police : str = ''\n    _unemployment : str = ''\n    _id : str = ''",
+        "detail": "crime.model.crime_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeModel",
+        "kind": 6,
+        "importPath": "crime.model.crime_model",
+        "description": "crime.model.crime_model",
+        "peekOfCode": "class CrimeModel:\n    def __init__(self) -> None:\n        self.ds = CrimeDataset()\n        this = self.ds\n        this.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        this.sname = './crime/save/'\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        # index_col=0 해야 기존 index 값이 유지된다. \n        # 0은 컬럼명 중에서 첫번째를 의미한다.(배열구조)",
+        "detail": "crime.model.crime_model",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeService",
+        "kind": 6,
+        "importPath": "crime.service.crime_service",
+        "description": "crime.service.crime_service",
+        "peekOfCode": "class CrimeService:\n    def __init__(self):\n        self.data = CrimeModel()\n        this = self.data\n        this.dname = './data/'\n        this.sname = './save/'\n    def get_sname(self):\n        return self.data.sname\n    def new_dframe_idx(self, fname: str) -> object:\n        this = self.data",
+        "detail": "crime.service.crime_service",
         "documentation": {}
     },
     {
@@ -210,6 +610,78 @@
         "documentation": {}
     },
     {
+        "label": "PrinterBase",
+        "kind": 6,
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "peekOfCode": "class PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(PrinterBase):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def xls(self):",
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ReaderBase",
+        "kind": 6,
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "peekOfCode": "class ReaderBase(PrinterBase):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def xls(self):\n        pass\n    @abstractmethod\n    def json(self):\n        pass",
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ScraperBase",
+        "kind": 6,
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "peekOfCode": "class ScraperBase(metaclass=ABCMeta):\n    @abstractmethod\n    def driver(self):\n        pass",
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeServic",
+        "kind": 6,
+        "importPath": "example.crime_service",
+        "description": "example.crime_service",
+        "peekOfCode": "class CrimeService : \n    dataset = CrimeDataset()\n    model = CrimeModel()\n    def __init__(self) :\n        # self.okt = Okt()\n        self.data = CrimeModel()\n        self.data.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        self.data.sname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\seve\\\\'\n        self.data.cctv = 'cctv_in_seoul.csv'\n        self.data.crime = 'cctv_in_seoul.csv'",
+        "detail": "example.crime_service",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "example.crime_service",
+        "description": "example.crime_service",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nload_dotenv(os.path.join(BASE_DIR,\".env\"))\nclass CrimeService : \n    dataset = CrimeDataset()\n    model = CrimeModel()\n    def __init__(self) :\n        # self.okt = Okt()\n        self.data = CrimeModel()\n        self.data.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        self.data.sname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\seve\\\\'",
+        "detail": "example.crime_service",
+        "documentation": {}
+    },
+    {
+        "label": "Printer",
+        "kind": 6,
+        "importPath": "example.crime_util",
+        "description": "example.crime_util",
+        "peekOfCode": "class Printer(PrinterBase):\n    def dframe(self, this:pd.DataFrame) -> None:\n        ic('*'*100)\n        ic(f'타입 : {type(this)}')\n        ic(f'column : {this.columns}')\n        ic(f'top 1 col : {this.head(1)}')\n        ic(f'null count : {this.isnul().sum()} 개')\n        ic('*'*100)\nclass Reader(ReaderBase):\n    def __init__(self):",
+        "detail": "example.crime_util",
+        "documentation": {}
+    },
+    {
+        "label": "Reader",
+        "kind": 6,
+        "importPath": "example.crime_util",
+        "description": "example.crime_util",
+        "peekOfCode": "class Reader(ReaderBase):\n    def __init__(self):\n        pass\n    def csv(self,file) -> object:\n        return pd.read_csv(f'{file}',encoding='UTF-8', thousands=',')\n    def xls(self,file,header,usecols) -> object:\n        return pd.read_csv(f'{file}', header=header, usecols=usecols)\n    def json(self,file) -> object:\n        return json.load(open(f'{file}.json',encoding='UTF-8'))\n    def gmaps(self) -> object:",
+        "detail": "example.crime_util",
+        "documentation": {}
+    },
+    {
+        "label": "Scraper",
+        "kind": 6,
+        "importPath": "example.crime_util",
+        "description": "example.crime_util",
+        "peekOfCode": "class Scraper(ScraperBase):\n    def __init__(self):\n        pass\n    def driver(self, driver, url, selector, data) -> None:\n        return webdriver.Chrome('')\n    def auto_login(self, driver, url, selector, data) -> None:\n        driver.get(url)\n        driver.find_element_by_css_selector(selector).send_keys(data)\n        driver.find_element_by_css_selector(selector).submit()",
+        "detail": "example.crime_util",
+        "documentation": {}
+    },
+    {
         "label": "Dice",
         "kind": 6,
         "importPath": "example.dice",
@@ -243,6 +715,87 @@
         "description": "example.rps",
         "peekOfCode": "class RPS:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 가위바위보 객체를 생성합니다')\n    # def play(self):\n    #     c = myRandom(1,3)\n    #     p = input('가위', '바위', '보')\n    #     # 1: 가위, 2: 바위, 3: 보\n    #     rps = ['가위', '바위', '보']\n    #     if p == rps[c-1] :\n    #         print(f'컴퓨터: {rps[c-1]}, 당신 : {p}, 비겼습니다.')",
         "detail": "example.rps",
+        "documentation": {}
+    },
+    {
+        "label": "SamsungRepor",
+        "kind": 6,
+        "importPath": "example.samsung_report",
+        "description": "example.samsung_report",
+        "peekOfCode": "class SamsungReport : \n    def __init__(self) :\n        self.okt = Okt()\n        self.data = DataModel()\n        self.data.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\example\\\\data\\\\'\n        self.data.fname = 'kr-Report_2018.txt'\n        text = '코드잇에 오신 걸 환영합니다'\n        self.result = ''\n        # print(self.okt.morphs(text))\n    def preprocessing(self):",
+        "detail": "example.samsung_report",
+        "documentation": {}
+    },
+    {
+        "label": "strip_demo",
+        "kind": 2,
+        "importPath": "example.strop_join_exam",
+        "description": "example.strop_join_exam",
+        "peekOfCode": "def strip_demo():\n    s = \"   Hello World   \"\n    print(s.strip())\n    print(s.lstrip())\n    print(s.rstrip())\n    print('')\ndef join_demo():\n    s = ['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd']\n    print(' '.join(s))\n    print(''.join(s))",
+        "detail": "example.strop_join_exam",
+        "documentation": {}
+    },
+    {
+        "label": "join_demo",
+        "kind": 2,
+        "importPath": "example.strop_join_exam",
+        "description": "example.strop_join_exam",
+        "peekOfCode": "def join_demo():\n    s = ['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd']\n    print(' '.join(s))\n    print(''.join(s))\n    print(','.join(s))\n    print('')\ndef join_demo_2():\n    s = ['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd']\n    tmp = '_'.join(s)\n    print(tmp)",
+        "detail": "example.strop_join_exam",
+        "documentation": {}
+    },
+    {
+        "label": "join_demo_2",
+        "kind": 2,
+        "importPath": "example.strop_join_exam",
+        "description": "example.strop_join_exam",
+        "peekOfCode": "def join_demo_2():\n    s = ['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd']\n    tmp = '_'.join(s)\n    print(tmp)\n    print('')\ndef join_demo_3():\n    addr = \"\\n\".join(['서울시', '강남구', '역삼동','123-456'])\n    print(addr)\n    print('')\ndef split_demo():",
+        "detail": "example.strop_join_exam",
+        "documentation": {}
+    },
+    {
+        "label": "join_demo_3",
+        "kind": 2,
+        "importPath": "example.strop_join_exam",
+        "description": "example.strop_join_exam",
+        "peekOfCode": "def join_demo_3():\n    addr = \"\\n\".join(['서울시', '강남구', '역삼동','123-456'])\n    print(addr)\n    print('')\ndef split_demo():\n    s = \"Hello, World\"\n    print(s.split())\n    print(s.split(','))\n    print('')\ndef replace_demo():",
+        "detail": "example.strop_join_exam",
+        "documentation": {}
+    },
+    {
+        "label": "split_demo",
+        "kind": 2,
+        "importPath": "example.strop_join_exam",
+        "description": "example.strop_join_exam",
+        "peekOfCode": "def split_demo():\n    s = \"Hello, World\"\n    print(s.split())\n    print(s.split(','))\n    print('')\ndef replace_demo():\n    s = \"Hello, World\"\n    print(s.replace('World', 'Python'))\n    print('')\n# https://velog.io/@jaeyoung9849/strip-split-join",
+        "detail": "example.strop_join_exam",
+        "documentation": {}
+    },
+    {
+        "label": "replace_demo",
+        "kind": 2,
+        "importPath": "example.strop_join_exam",
+        "description": "example.strop_join_exam",
+        "peekOfCode": "def replace_demo():\n    s = \"Hello, World\"\n    print(s.replace('World', 'Python'))\n    print('')\n# https://velog.io/@jaeyoung9849/strip-split-join\nif __name__ == '__main__':\n    strip_demo()\n    join_demo()\n    join_demo_2()\n    join_demo_3()",
+        "detail": "example.strop_join_exam",
+        "documentation": {}
+    },
+    {
+        "label": "kiwoom",
+        "kind": 5,
+        "importPath": "example.test_pyQt",
+        "description": "example.test_pyQt",
+        "peekOfCode": "kiwoom = Kiwoom()\nkiwoom.CommConnect(block=True)\nrrr = kiwoom.GetMasterLastPrice(\"005930\")\nprint(int(rrr))\nprint(type(rrr))",
+        "detail": "example.test_pyQt",
+        "documentation": {}
+    },
+    {
+        "label": "rrr",
+        "kind": 5,
+        "importPath": "example.test_pyQt",
+        "description": "example.test_pyQt",
+        "peekOfCode": "rrr = kiwoom.GetMasterLastPrice(\"005930\")\nprint(int(rrr))\nprint(type(rrr))",
+        "detail": "example.test_pyQt",
         "documentation": {}
     },
     {

@@ -1,4 +1,5 @@
-from example.utils import myRandom
+
+from utils import myRandom
 
 
 class LeapYear:

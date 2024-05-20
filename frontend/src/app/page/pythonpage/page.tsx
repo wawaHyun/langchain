@@ -91,7 +91,7 @@ return (
         </form >
 
 <div className="text-xl h-[200px] p-5 text-[23px] rounded-xl  bg-gray-100 shadow-xl shadow-gray-500">
-{!message ?  result({category}) :
+{!message ?  "result" :
   <p className="animate-bounce h-full opacity-50 text-[50px] content-center text-center ">Wait for input . . .</p>
 }
 </div>
