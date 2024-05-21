@@ -9,8 +9,8 @@ class CrimeDataset:
     _sname : str = ''
     _fname : str = ''
     _cctv : str = ''
-    _cctv20 : str = ''
     _crime : str = ''
+    _pop : str = ''
     _police : str = ''
     _unemployment : str = ''
     _id : str = ''
@@ -35,9 +35,9 @@ class CrimeDataset:
     def cctv(self, cctv: pd.DataFrame): self._cctv = cctv
 
     @property
-    def cctv20(self) -> str: return self._cctv20
-    @cctv20.setter
-    def cctv20(self, cctv20: pd.DataFrame): self._cctv20 = cctv20
+    def pop(self) -> str: return self._pop
+    @pop.setter
+    def pop(self, pop: pd.DataFrame): self._pop = pop
 
     @property
     def crime(self) -> str: return self._crime

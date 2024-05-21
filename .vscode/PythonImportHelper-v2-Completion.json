@@ -350,6 +350,22 @@
         "documentation": {}
     },
     {
+        "label": "CrimeDataset",
+        "importPath": "crime.model.crime_dataset",
+        "description": "crime.model.crime_dataset",
+        "isExtraImport": true,
+        "detail": "crime.model.crime_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "CrimeDataset",
+        "importPath": "crime.model.crime_dataset",
+        "description": "crime.model.crime_dataset",
+        "isExtraImport": true,
+        "detail": "crime.model.crime_dataset",
+        "documentation": {}
+    },
+    {
         "label": "CrimeModel",
         "importPath": "crime.model.crime_model",
         "description": "crime.model.crime_model",
@@ -464,6 +480,31 @@
         "documentation": {}
     },
     {
+        "label": "folium",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "folium",
+        "description": "folium",
+        "detail": "folium",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessing",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "Reader",
+        "importPath": "example.crime_util",
+        "description": "example.crime_util",
+        "isExtraImport": true,
+        "detail": "example.crime_util",
+        "documentation": {}
+    },
+    {
         "label": "Reader",
         "importPath": "example.crime_util",
         "description": "example.crime_util",
@@ -560,6 +601,14 @@
         "documentation": {}
     },
     {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -628,6 +677,14 @@
         "documentation": {}
     },
     {
+        "label": "EditorBase",
+        "importPath": "example.crime_abstract",
+        "description": "example.crime_abstract",
+        "isExtraImport": true,
+        "detail": "example.crime_abstract",
+        "documentation": {}
+    },
+    {
         "label": "googlemaps",
         "kind": 6,
         "isExtraImport": true,
@@ -650,6 +707,14 @@
         "description": "example.utils",
         "isExtraImport": true,
         "detail": "example.utils",
+        "documentation": {}
+    },
+    {
+        "label": "PopModel",
+        "importPath": "crime.model.pop_model",
+        "description": "crime.model.pop_model",
+        "isExtraImport": true,
+        "detail": "crime.model.pop_model",
         "documentation": {}
     },
     {
@@ -1146,7 +1211,7 @@
         "kind": 6,
         "importPath": "get_sample.crime.model.crime_dataset",
         "description": "get_sample.crime.model.crime_dataset",
-        "peekOfCode": "class CrimeDataset:\n    _dname : str = ''\n    _sname : str = ''\n    _fname : str = ''\n    _cctv : str = ''\n    _cctv20 : str = ''\n    _crime : str = ''\n    _police : str = ''\n    _unemployment : str = ''\n    _id : str = ''",
+        "peekOfCode": "class CrimeDataset:\n    _dname : str = ''\n    _sname : str = ''\n    _fname : str = ''\n    _cctv : str = ''\n    _crime : str = ''\n    _pop : str = ''\n    _police : str = ''\n    _unemployment : str = ''\n    _id : str = ''",
         "detail": "get_sample.crime.model.crime_dataset",
         "documentation": {}
     },
@@ -1157,6 +1222,15 @@
         "description": "get_sample.crime.model.crime_model",
         "peekOfCode": "class CrimeModel:\n    def __init__(self) -> None:\n        self.ds = CrimeDataset()\n        this = self.ds\n        this.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        this.sname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\save\\\\'\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        # index_col=0 해야 기존 index 값이 유지된다. \n        # 0은 컬럼명 중에서 첫번째를 의미한다.(배열구조)",
         "detail": "get_sample.crime.model.crime_model",
+        "documentation": {}
+    },
+    {
+        "label": "PopModel",
+        "kind": 6,
+        "importPath": "get_sample.crime.model.pop_model",
+        "description": "get_sample.crime.model.pop_model",
+        "peekOfCode": "class PopModel:\n    def __init__(self) -> None:\n        self.ds = CrimeDataset()\n        this = self.ds\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        # index_col=0 해야 기존 index 값이 유지된다. \n        # 0은 컬럼명 중에서 첫번째를 의미한다.(배열구조)\n        # pd.read_csv(f'경로/파일명/csv',index_col=0 => 인덱스로 지정할 column 명) index 지정\n        return pd.read_csv(f'{this.dname}{fname}',index_col=0)    ",
+        "detail": "get_sample.crime.model.pop_model",
         "documentation": {}
     },
     {
@@ -1223,11 +1297,20 @@
         "documentation": {}
     },
     {
+        "label": "EditorBase",
+        "kind": 6,
+        "importPath": "get_sample.example.crime_abstract",
+        "description": "get_sample.example.crime_abstract",
+        "peekOfCode": "class EditorBase(metaclass=ABCMeta):\n    @abstractmethod\n    def dropna(self,this:pd.DataFrame)->pd.DataFrame:\n        this = this.dropna()\n        return this\nclass PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):",
+        "detail": "get_sample.example.crime_abstract",
+        "documentation": {}
+    },
+    {
         "label": "PrinterBase",
         "kind": 6,
         "importPath": "get_sample.example.crime_abstract",
         "description": "get_sample.example.crime_abstract",
-        "peekOfCode": "class PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def xls(self):",
+        "peekOfCode": "class PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def excel(self):",
         "detail": "get_sample.example.crime_abstract",
         "documentation": {}
     },
@@ -1236,7 +1319,7 @@
         "kind": 6,
         "importPath": "get_sample.example.crime_abstract",
         "description": "get_sample.example.crime_abstract",
-        "peekOfCode": "class ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def xls(self):\n        pass\n    @abstractmethod\n    def json(self):\n        pass",
+        "peekOfCode": "class ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def excel(self):\n        pass\n    @abstractmethod\n    def json(self):\n        pass",
         "detail": "get_sample.example.crime_abstract",
         "documentation": {}
     },
@@ -1254,7 +1337,7 @@
         "kind": 6,
         "importPath": "get_sample.example.crime_service",
         "description": "get_sample.example.crime_service",
-        "peekOfCode": "class CrimeService : \n    dataset = CrimeDataset()\n    model = CrimeModel()\n    def __init__(self) :\n        # self.okt = Okt()\n        self.data = self.dataset\n        this = self.data\n        this.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        this.sname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\save\\\\'\n        this.cctv = 'cctv_in_seoul.csv'",
+        "peekOfCode": "class CrimeService : \n    dataset = CrimeDataset()\n    model = CrimeModel()\n    reader = Reader()\n    def __init__(self) :\n        # self.okt = Okt()\n        self.data = self.dataset\n        this = self.data\n        this.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        this.sname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\save\\\\'",
         "detail": "get_sample.example.crime_service",
         "documentation": {}
     },
@@ -1265,6 +1348,15 @@
         "description": "get_sample.example.crime_service",
         "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nprint('*' *100)\n# print(BASE_DIR)\nload_dotenv(os.path.join(BASE_DIR, \".env\"))\n'''\n문제정의 !\n서울시의 범죄현황과 CCTV현황을 분석해서\n정해진 예산안에서 구별로 다음해에 배분하는 기준을 마련하시오.\n예산금액을 입력하면, 구당 할당되는 CCTV 카운터를 자동으로\n알려주는 AI 프로그램을 작성하시오.",
         "detail": "get_sample.example.crime_service",
+        "documentation": {}
+    },
+    {
+        "label": "Editor",
+        "kind": 6,
+        "importPath": "get_sample.example.crime_util",
+        "description": "get_sample.example.crime_util",
+        "peekOfCode": "class Editor(EditorBase):\n    def dropna(self,this:pd.DataFrame)->pd.DataFrame:\n        this.dropna(axis=0, inplace=True)\nclass Printer(PrinterBase):\n    def dframe(self, this:pd.DataFrame) -> None:\n        ic('*'*100)\n        ic(f'타입 : {type(this)}')\n        ic(f'column : {this.columns}')\n        ic(f'top 1 col : {this.head(1)}')\n        ic(f'null count : {this.isnul().sum()} 개')",
+        "detail": "get_sample.example.crime_util",
         "documentation": {}
     },
     {
@@ -1281,7 +1373,7 @@
         "kind": 6,
         "importPath": "get_sample.example.crime_util",
         "description": "get_sample.example.crime_util",
-        "peekOfCode": "class Reader(ReaderBase):\n    def __init__(self):\n        pass\n    def csv(self,file) -> object:\n        return pd.read_csv(f'{file}',encoding='UTF-8', thousands=',')\n    def xls(self,file,header,usecols) -> object:\n        return pd.read_csv(f'{file}', header=header, usecols=usecols)\n    def json(self,file) -> object:\n        return json.load(open(f'{file}.json',encoding='UTF-8'))\n    def gmaps(self, api_key:str) -> object:",
+        "peekOfCode": "class Reader(ReaderBase):\n    def __init__(self):\n        pass\n    def csv(self,file) -> object:\n        return pd.read_csv(f'{file}',encoding='UTF-8', thousands=',')\n    def excel(self,file,header,usecols) -> object:\n        return pd.read_excel(f'{file}', header=header, usecols=usecols)\n    def json(self,file) -> object:\n        return json.load(open(f'{file}.json',encoding='UTF-8'))\n    def gmaps(self, api_key:str) -> object:",
         "detail": "get_sample.example.crime_util",
         "documentation": {}
     },
@@ -1319,6 +1411,15 @@
         "description": "get_sample.example.leap_year",
         "peekOfCode": "class LeapYear:\n    def __init__(self) -> None:\n        print(f'utils.py myRandom() 를 이용하여 윤년계산기 객체를 생성합니다')\n        print ('(ex) 2020년은 윤년입니다. 단 컴프리헨션을 사용합니다')\n    def is_leap_year(self):\n        y = myRandom(2000,2024)\n        s1 = '윤년' if( y%4==0 and y % 100!=0 ) else '평년'\n        s2 = '윤년' if ( y% 400 == 0 ) else '평년'\n        s = '윤년' if ((y%4==0 and y % 100!=0) or y% 400 == 0 ) else '평년'\n        print(f'{y}는 {s}다')",
         "detail": "get_sample.example.leap_year",
+        "documentation": {}
+    },
+    {
+        "label": "PopServic",
+        "kind": 6,
+        "importPath": "get_sample.example.population_serivce",
+        "description": "get_sample.example.population_serivce",
+        "peekOfCode": "class PopService : \n    dataset = CrimeDataset()\n    model = PopModel()\n    def __init__(self) :\n        self.data = self.dataset\n        this = self.data\n        this.dname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\data\\\\'\n        this.sname = 'C:\\\\Users\\\\bitcamp\\\\TuringTeamPJT\\\\langchain\\\\get_sample\\\\crime\\\\save\\\\'\n        this.pop = 'pop_in_seoul.xls'\n        self.pop_columns = \"B:B,D:D,G:G,J:J,N:N\"",
+        "detail": "get_sample.example.population_serivce",
         "documentation": {}
     },
     {

@@ -4,10 +4,14 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import json
 import pandas as pd
-from example.crime_abstract import PrinterBase, ReaderBase, ScraperBase
+from example.crime_abstract import PrinterBase, ReaderBase, ScraperBase, EditorBase
 from icecream import ic
 import googlemaps
 from selenium import webdriver
+
+class Editor(EditorBase):
+    def dropna(self,this:pd.DataFrame)->pd.DataFrame:
+        this.dropna(axis=0, inplace=True)
 
 class Printer(PrinterBase):
     def dframe(self, this:pd.DataFrame) -> None:
@@ -26,8 +30,8 @@ class Reader(ReaderBase):
     def csv(self,file) -> object:
         return pd.read_csv(f'{file}',encoding='UTF-8', thousands=',')
     
-    def xls(self,file,header,usecols) -> object:
-        return pd.read_csv(f'{file}', header=header, usecols=usecols)
+    def excel(self,file,header,usecols) -> object:
+        return pd.read_excel(f'{file}', header=header, usecols=usecols)
 
     def json(self,file) -> object:
         return json.load(open(f'{file}.json',encoding='UTF-8'))

@@ -1,4 +1,11 @@
 from abc import *
+import pandas as pd
+
+class EditorBase(metaclass=ABCMeta):
+    @abstractmethod
+    def dropna(self,this:pd.DataFrame)->pd.DataFrame:
+        this = this.dropna()
+        return this
 
 class PrinterBase(metaclass=ABCMeta):
     @abstractmethod
@@ -11,7 +18,7 @@ class ReaderBase(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def xls(self):
+    def excel(self):
         pass
 
     @abstractmethod
